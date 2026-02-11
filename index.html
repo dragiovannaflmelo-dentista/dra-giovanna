@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Dra. Giovanna | Odontologia Clínica em São José do Rio Preto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+  --creme: #fdfaf5;
+  --verde-menta: #a8d5ba;
+  --verde-escuro: #4a7c59;
+  --texto: #5a5a5a;
+  --branco: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background-color: var(--creme);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(135deg, #f5f1e9 0%, #ffffff 100%);
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero-container {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-text { flex: 1; min-width: 300px; }
+
+.hero-text h1 {
+  font-size: 42px;
+  color: var(--verde-escuro);
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* ESTA É A CONFIGURAÇÃO DA FOTO */
+.hero-img img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  border: 8px solid var(--branco);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* BOTÃO WHATSAPP */
+.btn-whatsapp {
+  display: inline-block;
+  background-color: var(--verde-menta);
+  color: var(--verde-escuro);
+  padding: 18px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 4px 15px rgba(168, 213, 186, 0.4);
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-3px);
+  background-color: var(--verde-escuro);
+  color: white;
+}
+
+/* SERVIÇOS */
+.services {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.services h2 { color: var(--verde-escuro); margin-bottom: 40px; }
+
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--branco);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid #f0e6d6;
+  transition: 0.3s;
+}
+
+.card h3 { color: var(--verde-escuro); margin-top: 0; }
+
+/* DEPOIMENTOS */
+.testimonials {
+  background-color: #f5f1e9;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.testimonial-box {
+  max-width: 700px;
+  margin: auto;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--verde-escuro);
+  min-height: 80px;
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  font-size: 14px;
+  background: var(--branco);
+}
+
+@media (max-width: 768px) {
+  .hero { text-align: center; }
+  .hero-container { justify-content: center; }
+  .hero-text h1 { font-size: 32px; }
+  .hero-img img { width: 280px; height: 280px; }
+}
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Dra. Giovanna</h1>
+        <p><b>Odontologia Clínica e Estética</b><br>
+        Cuidado humanizado e tecnologia para o seu sorriso em São José do Rio Preto.</p>
+        
+        <a href="https://wa.me/5517991658000?text=Olá,%20Dra.%20Giovanna.%20Vi%20seu%20anúncio%20no%20Google%20e%20gostaria%20de%20agendar%20uma%20avaliação." class="btn-whatsapp">
+          Agendar Consulta via WhatsApp
+        </a>
+      </div>
+      <div class="hero-img">
+        <img src="dra-giovanna.jpg" alt="Dra. Giovanna - Dentista">
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Nossos Cuidados</h2>
+    <div class="grid-services">
+      <div class="card">
+        <h3>Clínica Geral</h3>
+        <p>Limpeza, restaurações e prevenção para manter sua saúde bucal em dia.</p>
+      </div>
+      <div class="card">
+        <h3>Estética Dental</h3>
+        <p>Clareamento e procedimentos para realçar a beleza natural do seu sorriso.</p>
+      </div>
+      <div class="card">
+        <h3>Emergências</h3>
+        <p>Atendimento ágil para desconfortos e necessidades imediatas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>O que nossos pacientes dizem</h2>
+    <div class="testimonial-box" id="depoimento-texto">
+      "Atendimento impecável! A Dra. Giovanna transmite muita segurança e o consultório é muito acolhedor."
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Dra. Giovanna | São José do Rio Preto - SP<br>
+    Inscrição CRO ativa | Conteúdo Informativo</p>
+  </footer>
+
+  <script>
+    const depoimentos = [
+      "\"Atendimento impecável! A Dra. Giovanna transmite muita segurança e o consultório é muito acolhedor.\" - Mariana S.",
+      "\"Excelente profissional. Muito detalhista nas explicações e o procedimento foi muito tranquilo.\" - Ricardo F.",
+      "\"Fiquei muito satisfeita com o resultado do meu clareamento. Recomendo muito!\" - Ana Paula G."
+    ];
+    let index = 0;
+    setInterval(() => {
+      index = (index + 1) % depoimentos.length;
+      document.getElementById("depoimento-texto").innerText = depoimentos[index];
+    }, 8000);
+  </script>
+
+</body>
+</html>
